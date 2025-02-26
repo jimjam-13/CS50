@@ -1,7 +1,11 @@
-// use export cc=gcc
+// use export CC=gcc
 
 #include <stdio.h>
 
 int main(void) {
-    printf("Hello, World!\rHello, Jithin!\n");
+    char name[40];
+
+    printf("What's your name? ");
+    scanf("%s", name);
+    printf("Hello, %s!\n", name);
 }
