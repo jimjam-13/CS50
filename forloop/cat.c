@@ -1,15 +1,13 @@
 #include <stdio.h>
 
-void meow(void); // function prototype
+void meow(int n); // function prototype
 
 int main(void) {
-  int i = 0;
-
-  for (i = 0; i < 3; i++) {
-    meow(); // function call
-  }
+  meow(3); // function call
 }
 
-void meow(void) { // function definition
-  printf("meow\n");
+void meow(int n) { // function definition
+  for (int i = 0; i < n; i++) {
+    printf("meow\n");
+  }
 }
