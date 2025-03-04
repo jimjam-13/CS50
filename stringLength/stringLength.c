@@ -7,11 +7,9 @@ int length (char s[]);
 int main(void) {
   char s[50];
 
-  printf("Enter a string: ");
-  // scanf("%s", s); will cut the string at first space, tab or newline encountered
+  printf("Enter a string: "); // scanf("%s", s); will cut the string at first space, tab or newline encountered
   fgets(s, sizeof(s), stdin); // fgets() reads a string from the input including spaces, tabs and newlines
-  // Remove newline character from the end of the string
-  s[strcspn(s, "\n")] = 0;
+  s[strcspn(s, "\n")] = 0; // Remove newline character from the end of the string
 
   int i = length(s); // string length using custom function
   int length = strlen(s); // string length using built-in function
