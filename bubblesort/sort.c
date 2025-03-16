@@ -17,6 +17,7 @@ int main(void) {
     if (!swapped) {
       break;
     }
+    swapped = 0;
   }
 
   printf("Sorted array: ");
