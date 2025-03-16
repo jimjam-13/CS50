@@ -4,6 +4,8 @@
 int main(void) {
   char target[15], *strings[] = {"battleship", "boot", "cannon", "iron", "thimble", "top hat"};
 
+  // size of string array is no. of strings * size of a pointer(8 bytes)
+
   printf("Enter a string to search: ");
   fgets(target, sizeof(target), stdin);
   target[strcspn(target, "\n")] = 0;
