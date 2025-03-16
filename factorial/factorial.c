@@ -5,8 +5,10 @@ int fact(int n);
 int main() {
   int number;
 
-  printf("Enter a number: ");
-  scanf("%d", &number);
+  do {
+    printf("Enter a number: ");
+    scanf("%d", &number);
+  } while (number < 0);
 
   int factorial = fact(number);
 
