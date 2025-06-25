@@ -13,7 +13,8 @@ int main (void) {
   int n;
   scanf("%d", &n);
 
-  for (int i = 0; i < n; i++) { // this linked list is created in reverse order therefore it is LIFO
+  for (int i = 0; i < n; i++) { // this linked list is created in reverse order therefore it is LIFO --STACK--
+    
     node *new_node = malloc(sizeof(node));
     if (new_node == NULL) {
       printf("Memory allocation failed");
